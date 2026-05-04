@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài B4 - Phân tích trang web thật</title>
+</head>
+<body>
+
+<header>
+    <h1>Bài B4 - Phân tích trang web thật</h1>
+</header>
+
+<main>
+
+    <section>
+        <h2>Website được chọn</h2>
+        <p>thegioididong.com</p>
+    </section>
+
+    <section>
+        <h2>1. Phân tích tab Elements</h2>
+
+        <article>
+            <h3>Ba thẻ ngữ nghĩa HTML5 được sử dụng</h3>
+
+            <ul>
+                <li><strong>&lt;header&gt;</strong>: phần đầu trang, chứa logo, ô tìm kiếm và menu.</li>
+                <li><strong>&lt;nav&gt;</strong>: thanh điều hướng danh mục sản phẩm.</li>
+                <li><strong>&lt;footer&gt;</strong>: cuối trang, chứa thông tin công ty và liên hệ.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Hai thẻ dùng chưa đúng ngữ nghĩa</h3>
+
+            <ul>
+                <li>Một số khu vực sản phẩm dùng <strong>&lt;div&gt;</strong> thay vì <strong>&lt;article&gt;</strong>.</li>
+                <li>Một số nhóm nội dung dùng <strong>&lt;div&gt;</strong> thay vì <strong>&lt;section&gt;</strong>.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>2. Phân tích thẻ Table</h2>
+
+        <p>Bảng dùng để hiển thị thông số kỹ thuật sản phẩm:</p>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Tiêu chí</th>
+                    <th>Nội dung</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Màn hình</td>
+                    <td>6.1 inch</td>
+                </tr>
+
+                <tr>
+                    <td>RAM</td>
+                    <td>8GB</td>
+                </tr>
+
+                <tr>
+                    <td>Bộ nhớ</td>
+                    <td>256GB</td>
+                </tr>
+
+                <tr>
+                    <td>Pin</td>
+                    <td>4200mAh</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Có sử dụng: &lt;tbody&gt;</p>
+        <p>&lt;thead&gt;: Có hoặc tùy trang</p>
+    </section>
+
+    <section>
+        <h2>3. Phân tích thẻ Form</h2>
+
+        <form action="/tim-kiem" method="get">
+            <label for="search">Tìm kiếm:</label>
+            <input type="text" id="search" name="q">
+            <button type="submit">Tìm</button>
+        </form>
+
+        <p>Action: /tim-kiem</p>
+        <p>Method: GET</p>
+        <p>Input type: text</p>
+    </section>
+
+    <section>
+        <h2>4. Ảnh chụp màn hình</h2>
+
+        <ul>
+            <li>b4-elements.png</li>
+            <li>b4-table.png</li>
+            <li>b4-form.png</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Chu Văn Minh</p>
+</footer>
+
+</body>
+</html>
