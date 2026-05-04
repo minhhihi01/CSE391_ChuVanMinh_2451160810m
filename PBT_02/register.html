@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+</head>
+<body>
+
+<h1>Form Đăng ký Tài khoản E-Commerce</h1>
+
+<form action="#" method="POST">
+
+    <fieldset>
+        <legend>Thông tin cá nhân</legend>
+
+        <p>
+            <label for="fullname">Họ tên:</label><br>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Nhập họ tên"
+                   required minlength="2" maxlength="50">
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="Nhập email"
+                   required>
+        </p>
+
+        <p>
+            <label for="phone">Số điện thoại:</label><br>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Nhập 10 chữ số"
+                   pattern="[0-9]{10}"
+                   required>
+        </p>
+
+        <p>
+            <label for="birth">Ngày sinh:</label><br>
+            <input type="date" id="birth" name="birth"
+                   max="2026-05-04"
+                   required>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Tài khoản</legend>
+
+        <p>
+            <label for="username">Tên đăng nhập:</label><br>
+            <input type="text" id="username" name="username"
+                   placeholder="3-20 ký tự"
+                   pattern="[A-Za-z0-9_]{3,20}"
+                   required>
+        </p>
+
+        <p>
+            <label for="password">Mật khẩu:</label><br>
+            <input type="password" id="password" name="password"
+                   placeholder="Ít nhất 8 ký tự, 1 chữ hoa, 1 số"
+                   minlength="8"
+                   pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+                   required>
+        </p>
+
+        <p>
+            <label for="confirm">Xác nhận mật khẩu:</label><br>
+            <input type="password" id="confirm" name="confirm"
+                   placeholder="Nhập lại mật khẩu"
+                   minlength="8"
+                   pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+                   required>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Thông tin giao hàng</legend>
+
+        <p>
+            <label for="city">Thành phố:</label><br>
+            <select id="city" name="city" required>
+                <option value="">-- Chọn thành phố --</option>
+                <option>Hà Nội</option>
+                <option>Hồ Chí Minh</option>
+                <option>Đà Nẵng</option>
+                <option>Hải Phòng</option>
+                <option>Cần Thơ</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="district">Quận / Huyện:</label><br>
+            <select id="district" name="district" required>
+                <option value="">-- Chọn quận/huyện --</option>
+                <option>Hoàn Kiếm</option>
+                <option>Ba Đình</option>
+                <option>Đống Đa</option>
+                <option>Cầu Giấy</option>
+                <option>Thanh Xuân</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="address">Địa chỉ chi tiết:</label><br>
+            <textarea id="address" name="address"
+                      rows="3"
+                      placeholder="Nhập số nhà, tên đường..."
+                      required></textarea>
+        </p>
+
+        <p>
+            Giới tính:<br>
+
+            <input type="radio" id="male" name="gender" value="Nam" required>
+            <label for="male">Nam</label>
+
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+
+            <input type="radio" id="other" name="gender" value="Khác">
+            <label for="other">Khác</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">Tôi đồng ý điều khoản sử dụng</label>
+        </p>
+    </fieldset>
+
+    <p>
+        <button type="submit">Gửi</button>
+        <button type="reset">Đặt lại</button>
+    </p>
+
+</form>
+
+</body>
+</html>
