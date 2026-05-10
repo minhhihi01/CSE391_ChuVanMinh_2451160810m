@@ -1,0 +1,47 @@
+
+p{
+    color:black;
+}
+
+.text{
+    color:blue;
+}
+
+
+.highlight{
+    color:green;
+}
+
+
+p.text{
+    color:orange;
+}
+
+
+p.highlight{
+    color:purple;
+}
+
+
+.text.highlight{
+    color:brown;
+}
+
+
+#demo{
+    color:red;
+}
+
+p#demo{
+    color:teal;
+}
+
+#demo.text{
+    color:pink;
+}
+
+p#demo.text.highlight{
+    color:gold;
+    font-size:40px;
+    font-weight:bold;
+}
