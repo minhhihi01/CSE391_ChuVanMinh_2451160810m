@@ -69,6 +69,7 @@ Khi nào nên dùng:
 Website lớn.
 Dự án chuyên nghiệp.
 Nhiều trang web dùng chung giao diện.
+
 Câu A2
 1. .h1 → Chọn: ShopTLU
 2. .giá → Chọn: 25.990.000đ, 45.990.000đ
@@ -78,6 +79,7 @@ Câu A2
 6. bài viết > p → Chọn: 25.990.000đ, Mô tả sản phẩm..., 45.990.000đ, Mô tả sản phẩm...
 7. a[href="/"] → Chọn: Trang chủ
 8. .top-bar.dark h1 → Chọn: ShopTLU
+
 Câu A3
 1. content-box
 - Chiều rộng hiển thị = 450px
@@ -110,6 +112,7 @@ Nếu Rule A có !important
 → màu black
 
 Vì !important mạnh hơn các rule thường.
+
 Câu C1
 1
 Thanh bên = 300 + 40 + 2 = 342px
@@ -120,6 +123,7 @@ Layout bị hỏng Sidebar + content = 342 + 722 = 1064px > 960px không đủ c
 2 cách sửa
 Cách 1 — Sử dụng border-box
 Cách 2 — Không sử dụng hộp viền: giảm chiều rộng
+
 Câu C2
 1. Sản phẩm A:
 font-size = 20px
