@@ -1,67 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Positioning Demo</title>
-    <link rel="stylesheet" href="positioning.css" />
-  </head>
-  <body>
-    <!-- 1. Fixed Header -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Playground</title>
+    <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+
+    <!-- FIXED HEADER -->
     <header class="header">
-      <div class="logo">Cửa Hàng Của Tôi</div>
-      <nav>
-        <a href="#">Trang chủ</a>
-        <a href="#">Sản phẩm</a>
-        <a href="#">Liên hệ</a>
-      </nav>
+        <div class="logo">MyShop</div>
+
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
-    <div class="page">
-      <!-- 2. Sticky Sidebar -->
-      <aside class="sidebar">
-        <strong>Danh mục</strong>
-        <ul>
-          <li>Điện thoại</li>
-          <li>Laptop</li>
-          <li>Đồng hồ</li>
-          <li>Phụ kiện</li>
-        </ul>
-      </aside>
+    <!-- MAIN LAYOUT -->
+    <div class="container">
 
-      <!-- Main content -->
-      <main class="main">
-        <!-- 3. Product cards với badge HOT -->
-        <div class="product-grid">
-          <div class="card">
-            <div class="card__badge">HOT</div>
-            <div class="card__name">iPhone 15 Pro</div>
-            <div class="card__price">28.990.000đ</div>
-          </div>
+        <!-- CONTENT -->
+        <main class="content">
 
-          <div class="card">
-            <div class="card__badge">HOT</div>
-            <div class="card__name">MacBook Air M3</div>
-            <div class="card__price">32.990.000đ</div>
-          </div>
+            <!-- PRODUCT CARD -->
+            <div class="card">
 
-          <div class="card">
-            <div class="card__badge">HOT</div>
-            <div class="card__name">AirPods Pro</div>
-            <div class="card__price">6.490.000đ</div>
-          </div>
-        </div>
+                <!-- HOT BADGE -->
+                <div class="badge">HOT</div>
 
-        <div class="extra">
-          <p>Nội dung ví dụ để chứng minh sticky</p>
-          <p>Nội dung ví dụ để chứng minh sticky</p>
-          <p>Nội dung ví dụ để chứng minh sticky</p>
-          <p>Nội dung ví dụ để chứng minh sticky</p>
-        </div>
-      </main>
+                <img src="https://picsum.photos/300/200?1" alt="">
+
+                <h3>Gaming Headphone</h3>
+
+                <p>
+                    High quality sound for gaming and music.
+                </p>
+
+            </div>
+
+            <!-- EXTRA CONTENT FOR SCROLL -->
+            <div class="dummy">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+        </main>
+
+        <!-- STICKY SIDEBAR -->
+        <aside class="sidebar">
+            <h2>Categories</h2>
+
+            <ul>
+                <li>Electronics</li>
+                <li>Fashion</li>
+                <li>Accessories</li>
+                <li>Gaming</li>
+            </ul>
+        </aside>
+
     </div>
 
-    <!-- 4. Scroll to top button -->
-    <button class="scroll-top">↑</button>
-  </body>
+    <!-- BACK TO TOP BUTTON -->
+    <button class="top-btn">↑</button>
+
+</body>
 </html>
