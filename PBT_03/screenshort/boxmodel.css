@@ -1,97 +1,113 @@
-*{
-    margin:0;
-    padding:0;
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f4f4f4;
+
+    padding: 30px;
 }
 
-body{
-    font-family:Arial, sans-serif;
-    background:#f4f4f4;
-    color:#333;
-    padding:30px;
-    line-height:1.6;
+h1,
+h2,
+h3 {
+    margin-bottom: 20px;
 }
 
-h1,h2{
-    margin-bottom:15px;
+/* =========================
+   PART 1
+========================= */
+
+.box-container {
+    display: flex;
+
+    gap: 30px;
+
+    margin-bottom: 50px;
 }
 
-section{
-    margin-bottom:50px;
+/* COMMON BOX */
+.box {
+    width: 300px;
+
+    padding: 20px;
+
+    border: 5px solid #222;
+
+    background: white;
 }
 
-
-.compare{
-    display:flex;
-    gap:30px;
-    margin-top:20px;
-    flex-wrap:wrap;
+/* CONTENT-BOX */
+.content-box {
+    box-sizing: content-box;
 }
 
-.demo-box{
-    height:150px;
-    background:#dff6ff;
-    border:5px solid #333;
-    padding:20px;
-    text-align:center;
-    font-weight:bold;
+/* BORDER-BOX */
+.border-box {
+    box-sizing: border-box;
 }
 
-.content-box{
-    width:300px;
-    box-sizing:content-box;
+/* =========================
+   PART 2
+========================= */
+
+.layout {
+    width: 1000px;
+
+    display: flex;
+
+    margin-bottom: 40px;
+
+    border: 3px solid black;
 }
 
-.border-box{
-    width:300px;
-    box-sizing:border-box;
-    background:#ffe4b5;
+/* WITHOUT BORDER-BOX */
+.without-borderbox .sidebar,
+.without-borderbox .ads {
+    width: 250px;
+
+    padding: 15px;
+
+    background: #dceeff;
+
+    border: 2px solid blue;
+
+    box-sizing: content-box;
 }
 
+.without-borderbox .content {
+    width: 500px;
 
-.layout{
-    width:1000px;
-    margin-top:20px;
-    margin-bottom:40px;
-    overflow:hidden;
-    border:2px solid #222;
-    background:#fff;
+    padding: 20px;
+
+    background: #fff2cc;
+
+    border: 2px solid orange;
+
+    box-sizing: content-box;
 }
 
-.good *{
-    box-sizing:border-box;
+/* WITH BORDER-BOX */
+.with-borderbox .sidebar,
+.with-borderbox .ads {
+    width: 250px;
+
+    padding: 15px;
+
+    background: #d4ffd4;
+
+    border: 2px solid green;
+
+    box-sizing: border-box;
 }
 
-.good .sidebar,
-.good .ads{
-    width:250px;
-    padding:15px;
-    float:left;
-    min-height:180px;
-    background:#e8f0ff;
-}
+.with-borderbox .content {
+    width: 500px;
 
-.good .main-content{
-    width:500px;
-    padding:20px;
-    float:left;
-    min-height:180px;
-    background:#fff3cd;
-}
+    padding: 20px;
 
+    background: #ffe0e0;
 
-.bad .sidebar,
-.bad .ads{
-    width:250px;
-    padding:15px;
-    float:left;
-    min-height:180px;
-    background:#e8f0ff;
-}
+    border: 2px solid red;
 
-.bad .main-content{
-    width:500px;
-    padding:20px;
-    float:left;
-    min-height:180px;
-    background:#fff3cd;
+    box-sizing: border-box;
 }

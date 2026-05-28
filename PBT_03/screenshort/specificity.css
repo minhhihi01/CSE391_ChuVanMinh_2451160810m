@@ -1,47 +1,89 @@
+/* =========================
+   1. ELEMENT
+   Specificity: 0,0,1
+========================= */
 
-p{
-    color:black;
+p {
+    color: blue;
 }
 
-.text{
-    color:blue;
+/* =========================
+   2. ELEMENT + ELEMENT
+   Specificity: 0,0,2
+========================= */
+
+body p {
+    color: green;
 }
 
+/* =========================
+   3. CLASS
+   Specificity: 0,1,0
+========================= */
 
-.highlight{
-    color:green;
+.text {
+    color: orange;
 }
 
+/* =========================
+   4. CLASS
+   Specificity: 0,1,0
+========================= */
 
-p.text{
-    color:orange;
+.highlight {
+    color: purple;
 }
 
+/* =========================
+   5. ELEMENT + CLASS
+   Specificity: 0,1,1
+========================= */
 
-p.highlight{
-    color:purple;
+p.text {
+    color: brown;
 }
 
+/* =========================
+   6. TWO CLASSES
+   Specificity: 0,2,0
+========================= */
 
-.text.highlight{
-    color:brown;
+.text.highlight {
+    color: pink;
 }
 
+/* =========================
+   7. ELEMENT + TWO CLASSES
+   Specificity: 0,2,1
+========================= */
 
-#demo{
-    color:red;
+p.text.highlight {
+    color: teal;
 }
 
-p#demo{
-    color:teal;
+/* =========================
+   8. ID
+   Specificity: 1,0,0
+========================= */
+
+#demo {
+    color: red;
 }
 
-#demo.text{
-    color:pink;
+/* =========================
+   9. ID + ELEMENT
+   Specificity: 1,0,1
+========================= */
+
+p#demo {
+    color: gold;
 }
 
-p#demo.text.highlight{
-    color:gold;
-    font-size:40px;
-    font-weight:bold;
+/* =========================
+   10. ID + TWO CLASSES
+   Specificity: 1,2,0
+========================= */
+
+#demo.text.highlight {
+    color: black;
 }

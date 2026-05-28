@@ -1,75 +1,95 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Box Model Lab</title>
-<link rel="stylesheet" href="boxmodel.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Lab</title>
+
+    <link rel="stylesheet" href="boxmodel.css">
 </head>
 <body>
 
-<h1>Box Model Lab</h1>
+    <h1>Box Model Lab</h1>
 
-<!-- PHẦN 1 -->
-<section>
-    <h2>Phần 1: content-box vs border-box</h2>
+    <!-- =========================
+         PART 1
+    ========================== -->
 
-    <div class="compare">
+    <section>
 
-        <div class="demo-box content-box">
-            Hộp 1<br>
-            content-box
+        <h2>Part 1 — content-box vs border-box</h2>
+
+        <div class="box-container">
+
+            <!-- CONTENT BOX -->
+            <div class="box content-box">
+                <h3>Content Box</h3>
+
+                <p>
+                    box-sizing: content-box
+                </p>
+            </div>
+
+            <!-- BORDER BOX -->
+            <div class="box border-box">
+                <h3>Border Box</h3>
+
+                <p>
+                    box-sizing: border-box
+                </p>
+            </div>
+
         </div>
 
-        <div class="demo-box border-box">
-            Hộp 2<br>
-            border-box
+    </section>
+
+    <!-- =========================
+         PART 2
+    ========================== -->
+
+    <section>
+
+        <h2>Part 2 — 3 Column Layout</h2>
+
+        <!-- WITHOUT BORDER-BOX -->
+        <h3>Without border-box (Overflow)</h3>
+
+        <div class="layout without-borderbox">
+
+            <div class="sidebar">
+                Sidebar
+            </div>
+
+            <div class="content">
+                Main Content
+            </div>
+
+            <div class="ads">
+                Ads
+            </div>
+
         </div>
 
-    </div>
-</section>
+        <!-- WITH BORDER-BOX -->
+        <h3>With border-box (Correct Layout)</h3>
 
-<hr>
+        <div class="layout with-borderbox">
 
-<!-- PHẦN 2 -->
-<section>
-    <h2>Phần 2: Layout 3 cột (Đúng)</h2>
+            <div class="sidebar">
+                Sidebar
+            </div>
 
-    <div class="layout good">
+            <div class="content">
+                Main Content
+            </div>
 
-        <div class="sidebar">
-            Sidebar
+            <div class="ads">
+                Ads
+            </div>
+
         </div>
 
-        <div class="main-content">
-            Nội dung giữa
-        </div>
-
-        <div class="ads">
-            Quảng cáo
-        </div>
-
-    </div>
-
-    <h2>Layout sai nếu không dùng border-box</h2>
-
-    <div class="layout bad">
-
-        <div class="sidebar">
-            Sidebar
-        </div>
-
-        <div class="main-content">
-            Nội dung giữa
-        </div>
-
-        <div class="ads">
-            Quảng cáo
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
 </body>
 </html>

@@ -1,91 +1,128 @@
-
- I*{
+/* RESET */
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
+/* BODY */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+
+    background-color: #f4f4f4;
+
     color: #333;
+
     line-height: 1.6;
+
+    margin: 0;
 }
 
-#header {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
+/* HEADER */
+#main-header {
+    background: linear-gradient(to right, #0066cc, #00aaff);
+
     color: white;
+
     padding: 20px;
-    text-align: center;
 }
 
-nav {
-    background: #222;
-    padding: 12px;
-    text-align: center;
+/* TITLE */
+#main-header h1 {
+    margin-bottom: 10px;
 }
 
+/* NAVIGATION */
 nav a {
-    color: #ddd;
+    color: white;
+
     text-decoration: none;
-    margin: 0 15px;
+
+    margin-right: 20px;
+
     font-weight: bold;
+
+    transition: 0.3s;
 }
 
+/* HOVER */
 nav a:hover {
-    color: #ffd700;
+    color: yellow;
+
     text-decoration: underline;
 }
 
+/* ACTIVE LINK */
 nav a.active {
-    color: #00eaff;
-    border-bottom: 2px solid #00eaff;
-    padding-bottom: 4px;
-}
-
-.container {
-    width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
-}
-
-section {
     background: white;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 8px;
+
+    color: #0066cc;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
 }
 
+/* MAIN CONTAINER */
+.container {
+    padding: 30px;
+}
+
+/* SECTION */
+.about,
+.skills {
+    background: white;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+/* TABLE */
 table {
     width: 100%;
+
     border-collapse: collapse;
+
     margin-top: 15px;
 }
 
-th, td {
-    border: 1px solid #ccc;
+/* TABLE CELLS */
+th,
+td {
     padding: 12px;
-    text-align: center;
+
+    border: 1px solid #ccc;
+
+    text-align: left;
 }
 
+/* TABLE HEADER */
 th {
-    background: #333;
+    background: #222;
+
     color: white;
 }
 
+/* ZEBRA STRIPES */
 tr:nth-child(even) {
     background: #f2f2f2;
 }
 
+/* ROW HOVER */
 tr:hover {
-    background: #dff6ff;
+    background: #d6ecff;
 }
 
+/* FOOTER */
 footer {
     background: #222;
-    color: #ccc;
+
+    color: #ddd;
+
     text-align: center;
-    padding: 18px;
+
+    padding: 20px;
+
     font-weight: bold;
-    margin-top: 30px;
 }

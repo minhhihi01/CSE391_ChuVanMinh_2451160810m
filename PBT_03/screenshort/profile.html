@@ -3,73 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Cá Nhân</title>
+
+    <title>Profile Page</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header id="header">
-    <h1>Hồ Sơ Cá Nhân</h1>
-    <p>Xin chào! Đây là trang profile của tôi.</p>
-</header>
+    <!-- HEADER -->
+    <header id="main-header">
 
-<nav>
-    <a href="#" class="active">Trang chủ</a>
-    <a href="#">Giới thiệu</a>
-    <a href="#">Kỹ năng</a>
-    <a href="#">Liên hệ</a>
-</nav>
+        <h1>Nguyen Van A</h1>
 
-<main class="container">
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
 
-<section>
-    <h2>Thông Tin</h2>
-    <p>Họ tên: Minh Chu</p>
-    <p>Ngành học: Công nghệ thông tin</p>
-</section>
+    </header>
 
-<section>
-    <h2>Bảng năng lượng học tập</h2>
+    <!-- MAIN CONTENT -->
+    <main class="container">
 
-    <table>
-        <tr>
-            <th>Ngày</th>
-            <th>Giờ học</th>
-            <th>Năng lượng</th>
-        </tr>
+        <section class="about">
 
-        <tr>
-            <td>Thứ 2</td>
-            <td>4h</td>
-            <td>Cao</td>
-        </tr>
+            <h2>About Me</h2>
 
-        <tr>
-            <td>Thứ 3</td>
-            <td>3h</td>
-            <td>Trung bình</td>
-        </tr>
+            <p>
+                I am a web development student who loves HTML and CSS.
+            </p>
 
-        <tr>
-            <td>Thứ 4</td>
-            <td>5h</td>
-            <td>Cao</td>
-        </tr>
+        </section>
 
-        <tr>
-            <td>Thứ 5</td>
-            <td>2h</td>
-            <td>Thấp</td>
-        </tr>
+        <!-- SKILLS TABLE -->
+        <section class="skills">
 
-    </table>
-</section>
+            <h2>Skills Table</h2>
 
-</main>
+            <table>
 
-<footer>
-    © 2026 Minh Chu
-</footer>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+
+                <tr>
+                    <td>HTML</td>
+                    <td>Advanced</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediate</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Basic</td>
+                </tr>
+
+                <tr>
+                    <td>Responsive Design</td>
+                    <td>Intermediate</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>© 2026 My Profile Page</p>
+
+    </footer>
 
 </body>
 </html>

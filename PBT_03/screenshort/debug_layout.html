@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Debug Layout</title>
-<link rel="stylesheet" href="debug_layout.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Layout</title>
+
+    <link rel="stylesheet" href="debug_layout.css">
 </head>
 <body>
 
-<h1>Cách 1: border-box</h1>
+    <h1>Fix 1 — Border Box</h1>
 
-<div class="container fix1">
-    <div class="sidebar">Sidebar</div>
-    <div class="content">Content</div>
-</div>
+    <div class="container fix-borderbox">
 
-<hr>
+        <div class="sidebar">
+            Sidebar
+        </div>
 
-<h1>Cách 2: content-box chỉnh width</h1>
+        <div class="content">
+            Main Content
+        </div>
 
-<div class="container fix2">
-    <div class="sidebar">Sidebar</div>
-    <div class="content">Content</div>
-</div>
+    </div>
+
+    <h1>Fix 2 — Manual Width Calculation</h1>
+
+    <div class="container fix-manual">
+
+        <div class="sidebar">
+            Sidebar
+        </div>
+
+        <div class="content">
+            Main Content
+        </div>
+
+    </div>
 
 </body>
 </html>
-
-
