@@ -1,48 +1,86 @@
-body{
-    font-family:Arial;
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+
+    padding: 30px;
+
+    background: #f4f4f4;
 }
 
-.container{
-    width:960px;
-    margin:auto;
-    overflow:hidden;
-    margin-bottom:40px;
-    border:2px solid #333;
+h1 {
+    margin: 40px 0 20px;
 }
 
-.fix1 *{
-    box-sizing:border-box;
+/* COMMON */
+.container {
+    width: 960px;
+
+    margin-bottom: 60px;
+
+    border: 3px solid black;
+
+    overflow: hidden;
 }
 
-.fix1 .sidebar{
-    width:300px;
-    padding:20px;
-    border:1px solid #ccc;
-    float:left;
-    background:#dbeafe;
+.sidebar,
+.content {
+    float: left;
+
+    min-height: 200px;
 }
 
-.fix1 .content{
-    width:660px;
-    padding:30px;
-    border:1px solid #ccc;
-    float:left;
-    background:#fef3c7;
+/* =========================
+   FIX 1 — BORDER BOX
+========================= */
+
+.fix-borderbox * {
+    box-sizing: border-box;
 }
 
+.fix-borderbox .sidebar {
+    width: 300px;
 
-.fix2 .sidebar{
-    width:258px;
-    padding:20px;
-    border:1px solid #ccc;
-    float:left;
-    background:#dbeafe;
+    padding: 20px;
+
+    border: 1px solid #ccc;
+
+    background: #d6ecff;
 }
 
-.fix2 .content{
-    width:598px;
-    padding:30px;
-    border:1px solid #ccc;
-    float:left;
-    background:#fef3c7;
+.fix-borderbox .content {
+    width: 660px;
+
+    padding: 30px;
+
+    border: 1px solid #ccc;
+
+    background: #fff2cc;
+}
+
+/* =========================
+   FIX 2 — MANUAL WIDTH
+========================= */
+
+.fix-manual .sidebar {
+    width: 258px;
+
+    padding: 20px;
+
+    border: 1px solid #ccc;
+
+    background: #d4ffd4;
+
+    box-sizing: content-box;
+}
+
+.fix-manual .content {
+    width: 598px;
+
+    padding: 30px;
+
+    border: 1px solid #ccc;
+
+    background: #ffd6d6;
+
+    box-sizing: content-box;
 }
