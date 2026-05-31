@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý công việc cá nhân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>QUẢN LÝ CÔNG VIỆC CÁ NHÂN</h1>
+
+    <button id="addTaskBtn">+ Thêm công việc</button>
+
+    <div id="message"></div>
+
+    <div class="stats">
+        <p>Tổng: <span id="totalTasks">0</span></p>
+        <p>Hoàn thành: <span id="completedTasks">0</span></p>
+        <p>Chưa hoàn thành: <span id="pendingTasks">0</span></p>
+    </div>
+
+    <div id="taskList"></div>
+
+</div>
+
+<div id="modal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <h2 id="modalTitle">Thêm công việc</h2>
+
+        <form id="taskForm">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Tiêu đề công việc"
+                required
+            >
+
+            <textarea
+                id="description"
+                placeholder="Mô tả công việc"
+            ></textarea>
+
+            <input
+                type="date"
+                id="deadline"
+            >
+
+            <select id="priority">
+                <option value="Thấp">Thấp</option>
+                <option value="Trung bình">Trung bình</option>
+                <option value="Cao">Cao</option>
+            </select>
+
+            <div class="buttons">
+                <button type="submit">Lưu</button>
+                <button
+                    type="button"
+                    id="closeBtn"
+                >
+                    Hủy
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
